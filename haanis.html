@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaanis - Premium Electronics Accessories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and smooth scrolling */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f7f9fc; /* Very light background */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="text-3xl font-extrabold text-indigo-600 tracking-tight">
+                    Jaanis
+                </a>
+                
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-150 ease-in-out">Home</a>
+                    <a href="#products" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-150 ease-in-out">Products</a>
+                    <a href="#about" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-150 ease-in-out">About</a>
+                    <a href="#contact" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-150 ease-in-out">Contact</a>
+                </nav>
+
+                <!-- CTA Button (Visible on all screens, but moved to the side on mobile) -->
+                <button class="bg-indigo-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 ease-in-out shadow-lg transform hover:scale-105 hidden sm:block">
+                    Shop Now
+                </button>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Home</a>
+                <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Products</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">About</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Contact</a>
+                <button class="w-full bg-indigo-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300 ease-in-out mt-2">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-24 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                    Power Up Your World. Premium Tech, Simplified.
+                </h1>
+                <p class="text-xl sm:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">
+                    Explore the latest in charging, audio, and mobile gear designed for durability and performance.
+                </p>
+                <a href="#products" class="inline-block bg-white text-indigo-600 px-10 py-4 text-xl font-bold rounded-full shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Explore Our Gear
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-900">Featured Accessories</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product Card 1: Wireless Earbuds -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                        <img src="https://placehold.co/600x400/312e81/ffffff?text=Wireless+Earbuds" 
+                             alt="Jaanis Pro-Audio Wireless Earbuds" 
+                             class="w-full h-48 object-cover object-center"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/312e81/ffffff?text=Pro+Audio+Buds';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Aura Pro Earbuds</h3>
+                            <p class="text-gray-500 mb-4 text-sm">Active Noise Cancellation and 30-hour battery life.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-extrabold text-indigo-600">$89.99</span>
+                                <button class="bg-indigo-500 text-white px-4 py-2 text-sm rounded-lg hover:bg-indigo-600 transition">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: 100W Fast Charger -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=100W+GaN+Charger" 
+                             alt="Jaanis 100W GaN Fast Charger" 
+                             class="w-full h-48 object-cover object-center"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/ffffff?text=100W+Charger';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Velocity 100W Charger</h3>
+                            <p class="text-gray-500 mb-4 text-sm">Ultra-compact Gallium Nitride (GaN) technology.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-extrabold text-indigo-600">$49.99</span>
+                                <button class="bg-indigo-500 text-white px-4 py-2 text-sm rounded-lg hover:bg-indigo-600 transition">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: Braided USB-C Cable -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                        <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Braided+USB-C+Cable" 
+                             alt="Jaanis Durable USB-C Cable" 
+                             class="w-full h-48 object-cover object-center"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/a78bfa/ffffff?text=Durable+Cable';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">Titan Braided Cable</h3>
+                            <p class="text-gray-500 mb-4 text-sm">3m length, ultra-durable nylon braided fiber.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-extrabold text-indigo-600">$19.99</span>
+                                <button class="bg-indigo-500 text-white px-4 py-2 text-sm rounded-lg hover:bg-indigo-600 transition">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: 20000mAh Power Bank -->
+                    <div class="bg-white rounded-xl shadow-xl overflow-hidden transform transition duration-500 hover:scale-[1.02] hover:shadow-2xl">
+                        <img src="https://placehold.co/600x400/4c1d95/ffffff?text=20000mAh+Power+Bank" 
+                             alt="Jaanis High-Capacity Power Bank" 
+                             class="w-full h-48 object-cover object-center"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/4c1d95/ffffff?text=Power+Bank';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 text-gray-900">MegaCharge Power Bank</h3>
+                            <p class="text-gray-500 mb-4 text-sm">20000mAh capacity with dual 45W PD ports.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-2xl font-extrabold text-indigo-600">$79.99</span>
+                                <button class="bg-indigo-500 text-white px-4 py-2 text-sm rounded-lg hover:bg-indigo-600 transition">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Why Choose Jaanis -->
+        <section id="about" class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:text-center">
+                    <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Promise</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Built for Tomorrow's Technology
+                    </p>
+                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                        At Jaanis, we believe accessories should be as powerful and reliable as your devices. We focus on quality, speed, and clean design.
+                    </p>
+                </div>
+
+                <div class="mt-10">
+                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
+                                    <!-- Icon for Quality -->
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 003 12c0 2.51 1.018 4.757 2.709 6.452l-1.09 1.09A1 1 0 005.414 21H18.586a1 1 0 00.707-1.707l-1.09-1.09C19.982 16.757 21 14.51 21 12a12.003 12.003 0 00-.382-7.016z"></path></svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Unmatched Quality</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Every product is tested to withstand daily wear and tear and exceed industry standards.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
+                                    <!-- Icon for Fast Shipping -->
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Rapid Delivery</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Get your essential gear fast with our next-day shipping options available worldwide.
+                            </dd>
+                        </div>
+
+                        <div class="relative">
+                            <dt>
+                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
+                                    <!-- Icon for Support -->
+                                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14m-1.414-1.414a2 2 0 10-2.828-2.828A2 2 0 007 10z"></path></svg>
+                                </div>
+                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">24/7 Expert Support</p>
+                            </dt>
+                            <dd class="mt-2 ml-16 text-base text-gray-500">
+                                Our support team is always ready to assist you with any questions or issues you may have.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section id="contact" class="bg-indigo-700">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                    <span class="block">Ready to upgrade your setup?</span>
+                    <span class="block text-indigo-300">Get 15% off your first order!</span>
+                </h2>
+                <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                    <div class="inline-flex rounded-md shadow">
+                        <a href="#products" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 transition duration-300">
+                            Claim Offer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="#home" class="text-base text-gray-400 hover:text-white">Home</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#products" class="text-base text-gray-400 hover:text-white">Products</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#" class="text-base text-gray-400 hover:text-white">Privacy</a>
+                </div>
+                <div class="px-5 py-2">
+                    <a href="#contact" class="text-base text-gray-400 hover:text-white">Support</a>
+                </div>
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+                <!-- Social Icons (Placeholder SVG) -->
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.77-1.63 1.563V12h2.77l-.44 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 5.3a8.5 8.5 0 01-2.4.7c.9-1.2 2.2-2 3.5-2.2-.8.5-1.7.9-2.7 1.1A4.2 4.2 0 0013.8 4c-2.3 0-4.2 1.9-4.2 4.2 0 .3 0 .6.1.9C6.5 8.7 3.4 7.1 1.4 4.5c-.3.5-.5 1-.5 1.7 0 1.5.8 2.8 2 3.6-.7 0-1.3-.2-1.8-.5v.1c0 2 1.4 3.6 3.3 4-.3.1-.7.1-1.1.1-.3 0-.7 0-1-.1.5 1.7 2 3 3.7 3-.2 0-.4 0-.6-.1-1.7 1.3-3.9 2-6.2 2 0-.2 0-.4 0-.6 0-.8.1-1.5.3-2.2 2.3 1.2 5 1.8 7.8 1.8 9.4 0 14.5-7.8 14.5-14.5 0-.2 0-.4 0-.6.9-.6 1.7-1.3 2.3-2.1z" /></svg>
+                </a>
+            </div>
+            <p class="mt-8 text-center text-base text-gray-400">
+                &copy; 2025 Jaanis. All rights reserved. Premium Electronics Accessories.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            button.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+            
+            // Close menu when a link is clicked
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
